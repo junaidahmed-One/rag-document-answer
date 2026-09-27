@@ -43,3 +43,9 @@ class PdfReader:
         return [p.strip() for p in self.pages_text.split('\n') if p.strip()]
 
     
+### testing 
+
+pdf_reader = PdfReader()
+pdf_reader.extract_text()
+print(pdf_reader.extract_small_portion_of_pdf(min=0,max=100))
+print(pdf_reader.get_paragraphs()[:3])
